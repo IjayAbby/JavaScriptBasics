@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Scoping Example</title>
+  <script type= "text/javascript">
+  var aNewVariable = "is global.";
+  function doSomething(incomingBits){
+      alert("Global variable within the function:" + aNewVariable);
+      alert("Local variable within the function:");
+  }
+  </script>
+    </head>
+    <body>
+         <script type="text/javascript">
+         doSomething("is a local variable");
+         alert("Global var outside the function:" + aNewVariable);
+         alert("Local var outside the function:"+ incomingBits); 
+
+            
+            </script>
+    </body>
+</html>

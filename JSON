@@ -1,0 +1,11 @@
+const user = {
+    name:'Ijay',
+    city:'Nairobi',
+}
+const userJSON = JSON.stringify(user)
+console.log(userJSON)
+localStorage.setItem('user',userJSON)
+
+const data = localStorage.getItem('user')
+const user = JSON.parse(data)
+console.log(`${user.name} is in ${user.city}`)
